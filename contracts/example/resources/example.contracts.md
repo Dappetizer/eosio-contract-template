@@ -32,7 +32,7 @@
 
 ...
 
-<h1 class="contract">deleteemsg</h1>
+<h1 class="contract">deletemsg</h1>
 ...
 
 ### Parameters
