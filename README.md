@@ -7,9 +7,17 @@ To begin, navigate to the project directory: `eosio-contract-template/`
 
     mkdir build && mkdir build/example
 
+    chmod +x create.sh
+
     chmod +x build.sh
 
     chmod +x deploy.sh
+
+The `example` contract has already been created and is build-ready, but if you want to create a brand new contract then simply call the `create` script.
+
+## Create
+
+    ./create.sh new-contract-name
 
 ## Build
 

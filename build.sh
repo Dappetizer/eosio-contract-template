@@ -19,5 +19,3 @@ echo ">>> Building $contract..."
 # -R=<string>              - Add a resource path for inclusion
 
 eosio-cpp -I="./contracts/$contract/include/" -R="./contracts/$contract/resources" -o="./build/$contract/$contract.wasm" -contract="$contract" -abigen ./contracts/$contract/src/$contract.cpp
-
-echo ">>> Build Complete"
