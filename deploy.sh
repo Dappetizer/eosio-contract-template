@@ -10,10 +10,10 @@ else
 fi
 
 #network
-if [[ "$2" == "mainnet" ]]; then
-    url=http://api.tlos.goodblock.io
+if [[ "$2" == "mainnet" ]]; then 
+    url=http://api.tlos.goodblock.io #Telos Mainnet
 elif [[ "$2" == "testnet" ]]; then
-    url=https://api-test.tlos.goodblock.io/
+    url=https://api-test.tlos.goodblock.io/ # Basho Testnet
 elif [[ "$2" == "local" ]]; then
     url=http://127.0.0.1:8888
 else
