@@ -11,7 +11,7 @@ fi
 
 #network
 if [[ "$2" == "mainnet" ]]; then 
-    url=http://api.tlos.goodblock.io #Telos Mainnet
+    url=http://api.tlos.goodblock.io # Telos Mainnet
 elif [[ "$2" == "testnet" ]]; then
     url=https://api-test.tlos.goodblock.io/ # Basho Testnet
 elif [[ "$2" == "local" ]]; then
@@ -21,7 +21,7 @@ else
     exit 0
 fi
 
-echo ">>> Deploying $contract to $account on $2..."
+echo ">>> Deploying $contract contract to $account on $2..."
 
 # eosio v1.8.0
 cleos -u $url set contract $account ./build/$contract/ $contract.wasm $contract.abi -p $account

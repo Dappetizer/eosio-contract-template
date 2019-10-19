@@ -4,7 +4,7 @@ example::example(name self, name code, datastream<const char*> ds) : contract(se
 
 example::~example() {}
 
-//======================== actions ========================
+//======================== message actions ========================
 
 ACTION example::createmsg(name account_name, string message) {
     //authenticate
@@ -12,7 +12,10 @@ ACTION example::createmsg(name account_name, string message) {
 
     //open tests table, search for account name
     tests_table tests(get_self(), get_self().value);
-    auto t = tests.find(account_name.value);
+    auto t_itr = tests.find(account_name.value);
+
+    //validate
+    check(t_itr == tests.end(), "message already exists, please update instead");
 
     //emplace new message, ram paid by account_name
     tests.emplace(account_name, [&](auto& col) {
@@ -22,7 +25,7 @@ ACTION example::createmsg(name account_name, string message) {
 }
 
 ACTION example::updatemsg(name account_name, string new_message) {
-    //open tests table, search for account name
+    //open tests table, get account name
     tests_table tests(get_self(), get_self().value);
     auto& t = tests.get(account_name.value, "account not found");
 
@@ -36,7 +39,7 @@ ACTION example::updatemsg(name account_name, string new_message) {
 }
 
 ACTION example::deletemsg(name account_name) {
-    //open tests table, search for account name
+    //open tests table, get account name
     tests_table tests(get_self(), get_self().value);
     auto& t = tests.get(account_name.value, "account not found");
 

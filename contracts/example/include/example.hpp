@@ -2,10 +2,9 @@
 //
 // @author Awesome Developer Person
 // @contract example
-// @version v1.0.0
+// @version v1.0.1
 
 #include <eosio/eosio.hpp>
-#include <eosio/action.hpp>
 
 using namespace std;
 using namespace eosio;
@@ -18,7 +17,7 @@ public:
 
     ~example();
 
-    //======================== actions ========================
+    //======================== message actions ========================
 
     //create description
     ACTION createmsg(name account_name, string message);

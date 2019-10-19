@@ -8,7 +8,7 @@ else
     exit 0
 fi
 
-echo ">>> Building $contract..."
+echo ">>> Building $contract contract..."
 
 # eosio.cdt v1.6.1
 # -contract=<string>       - Contract name
