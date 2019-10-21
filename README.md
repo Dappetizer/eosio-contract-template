@@ -7,9 +7,17 @@ To begin, navigate to the project directory: `eosio-contract-template/`
 
     mkdir build && mkdir build/example
 
+    chmod +x create.sh
+
     chmod +x build.sh
 
     chmod +x deploy.sh
+
+The `example` contract has already been created and is build-ready, but if you want to create a brand new contract then simply call the `create` script.
+
+## Create
+
+    ./create.sh new-contract-name
 
 ## Build
 
@@ -19,9 +27,9 @@ To begin, navigate to the project directory: `eosio-contract-template/`
 
     ./deploy.sh contract-name { mainnet | testnet | local }
 
-# Example Contract
+# Example Contract API
 
-An example contract has been provided for reference. It allows an account to create, update, or delete a simple message saved on the blockchain.
+The `example` contract has been provided for reference. It allows an account to create, update, or delete a simple message saved on the blockchain.
 
 ### Create Message
 
@@ -31,7 +39,7 @@ Creates the account's message and saves it.
 
 ### Update Message
 
-Finds the account's message and overwrrites it with the new message.
+Finds the account's message and overwrites it with the new message.
 
 `cleos push action exampleacct1 updatemsg '["exampleacct1", "howdy partner"]' -p exampleacct1`
 
