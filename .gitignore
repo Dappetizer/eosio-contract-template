@@ -33,3 +33,4 @@
 
 # Dev
 build/
+.DS_Store
