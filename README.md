@@ -1,6 +1,11 @@
 # EOSIO Contract Template
 A template repository for EOSIO contracts.
 
+## Dependencies
+
+* eosio.cdt
+* nodeos, cleos, keosd
+
 ## Setup
 
 To begin, navigate to the project directory: `eosio-contract-template/`
