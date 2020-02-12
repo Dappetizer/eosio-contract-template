@@ -1,17 +1,22 @@
 # EOSIO Contract Template
 A template repository for EOSIO contracts.
 
+## Dependencies
+
+* eosio.cdt
+* nodeos, cleos, keosd
+
 ## Setup
 
 To begin, navigate to the project directory: `eosio-contract-template/`
 
-    mkdir build && mkdir build/messages
+    mkdir build && mkdir build/messager
 
     chmod +x build.sh
 
     chmod +x deploy.sh
 
-The `messages` contract has already been implemented and is build-ready.
+The `messager` contract has already been implemented and is build-ready.
 
 ## Build
 
@@ -19,6 +24,6 @@ The `messages` contract has already been implemented and is build-ready.
 
 ## Deploy
 
-    ./deploy.sh contract-name { mainnet | testnet | local }
+    ./deploy.sh contract-name account-name { mainnet | testnet | local }
 
-### Messages Contract API can be found [here](docs/ContractAPI.md).
+### Messager Contract API can be found [here](docs/ContractAPI.md).

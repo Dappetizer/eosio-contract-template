@@ -1,6 +1,6 @@
-# Messages Contract API
+# Messager Contract API
 
-The `messages` contract has been provided for reference. It allows an account to create, update, or delete a simple message saved on the blockchain.
+The `messager` contract has been provided for reference. It allows an account to create, update, or delete a simple message saved on the blockchain.
 
 ### Create Message
 
