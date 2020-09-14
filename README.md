@@ -5,25 +5,32 @@ A template repository for EOSIO contracts.
 
 * eosio.cdt
 * nodeos, cleos, keosd
+* nodejs (tests)
 
 ## Setup
 
 To begin, navigate to the project directory: `eosio-contract-template/`
 
-    mkdir build && mkdir build/messager
+    mkdir build && mkdir build/todo
 
     chmod +x build.sh
 
     chmod +x deploy.sh
 
-The `messager` contract has already been implemented and is build-ready.
+    chmod +x test.sh
+
+The `todo` contract has already been implemented and is build-ready.
 
 ## Build
 
-    ./build.sh contract-name
+    ./build.sh todo
 
 ## Deploy
 
-    ./deploy.sh contract-name account-name { mainnet | testnet | local }
+    ./deploy.sh todo account-name { mainnet | testnet | local }
 
-### Messager Contract API can be found [here](docs/ContractAPI.md).
+## Test
+
+    ./test.sh todo
+
+### Contract API can be found [here](docs/ContractAPI.md).

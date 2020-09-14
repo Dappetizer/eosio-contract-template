@@ -1,8 +1,8 @@
 #! /bin/bash
 
 #contract
-if [[ "$1" == "messager" ]]; then
-    contract=messager
+if [[ "$1" == "todo" ]]; then
+    contract=todo
 else
     echo "need contract"
     exit 0
@@ -13,10 +13,10 @@ account=$2
 
 #network
 if [[ "$3" == "mainnet" ]]; then 
-    url=http://api.tlos.goodblock.io
+    url=http://telos.caleos.io
     network="Telos Mainnet"
 elif [[ "$3" == "testnet" ]]; then
-    url=https://api-test.tlos.goodblock.io/
+    url=https://testnet.telos.caleos.io
     network="Telos Testnet"
 elif [[ "$3" == "local" ]]; then
     url=http://127.0.0.1:8888

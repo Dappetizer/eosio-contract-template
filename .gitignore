@@ -34,3 +34,7 @@
 # Dev
 build/
 .DS_Store
+
+# Tests
+tests/node_modules/
+tests/.env
