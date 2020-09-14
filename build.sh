@@ -1,8 +1,8 @@
 #! /bin/bash
 
 #contract
-if [[ "$1" == "messager" ]]; then
-    contract=messager
+if [[ "$1" == "todo" ]]; then
+    contract=todo
 else
     echo "need contract"
     exit 0

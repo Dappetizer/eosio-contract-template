@@ -5,6 +5,7 @@ A template repository for EOSIO contracts.
 
 * eosio.cdt
 * nodeos, cleos, keosd
+* nodejs (tests)
 
 ## Setup
 
@@ -26,4 +27,8 @@ The `messager` contract has already been implemented and is build-ready.
 
     ./deploy.sh contract-name account-name { mainnet | testnet | local }
 
-### Messager Contract API can be found [here](docs/ContractAPI.md).
+## Test
+
+    ./test.sh all
+
+### Contract API can be found [here](docs/ContractAPI.md).

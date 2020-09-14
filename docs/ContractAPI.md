@@ -1,21 +1,29 @@
-# Messager Contract API
+# Contract API
 
-The `messager` contract has been provided for reference. It allows an account to create, update, or delete a simple message saved on the blockchain.
+## init()
 
-### Create Message
+Initialize the todo contract.
 
-Creates the account's message and saves it.
+## setversion()
 
-`cleos push action exampleacct1 createmsg '["exampleacct1", "yee haw"]' -p exampleacct1`
+Set a new version for the contract.
 
-### Update Message
+## setadmin()
 
-Finds the account's message and overwrites it with the new message.
+Set a new admin for the contract.
 
-`cleos push action exampleacct1 updatemsg '["exampleacct1", "howdy partner"]' -p exampleacct1`
+## createtask()
 
-### Delete Message
+Create a new task.
 
-Finds the account's message and deletes it.
+## updatemsg()
 
-`cleos push action exampleacct1 deletemsg '["exampleacct1"]' -p exampleacct1`
+Update the task message.
+
+## completetask()
+
+Mark a task as complete.
+
+## deletetask()
+
+Delete a task.
